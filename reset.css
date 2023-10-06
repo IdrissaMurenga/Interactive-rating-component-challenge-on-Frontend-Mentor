@@ -3,18 +3,18 @@
 *,
 *::before,
 *::after{
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /** remove default margin **/
 
 *{
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /** HTML5 display-role reset for older browsers **/
 
@@ -30,18 +30,18 @@ html, body {
 
 body {
 	line-height: 1;
-        min-height: 100vh;
-        text-rendering: optimizeSpeed;
-       -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  -webkit-font-smoothing: antialiased;
 }
 
 /** set core root default **/
 html:focus-within{
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 /** remove list style on ul, ol element with a list role, which suggest default styling will be removed **/
 ul[role='list'],ol[role='list']{
-    list-style: none;
+  list-style: none;
 }
 
 /** make image easier to work **/
@@ -63,14 +63,14 @@ h1, h2, h3, h4, h5, h6{
 }
 /** element that don't have a class get default **/
 a:not([class]){
-    text-decoration-skip-ink: auto;
+  text-decoration-skip-ink: auto;
 }
 blockquote, q {
 	quotes: none;
 }
 /** inherit fonts for inputs and buttons **/
 input,button,textarea,select{
-    font: inherit;
+  font: inherit;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
@@ -84,12 +84,12 @@ table {
 /** remove all animations, transitions and smoth scroll for people that prefere not to see them **/
 @media(prefers-reduced-motion:reduce){
     html:focus-within{
-        scroll-behavior: auto;
+      scroll-behavior: auto;
     }
     *,*::before,*::after{
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0,01ms !important;
-        scroll-behavior: auto !important;
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0,01ms !important;
+      scroll-behavior: auto !important;
     }
 }

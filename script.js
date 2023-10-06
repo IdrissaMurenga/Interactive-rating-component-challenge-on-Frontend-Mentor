@@ -12,7 +12,7 @@ submitBtn.addEventListener("click",()=>{
 num.forEach((num)=>{
     num.addEventListener("click",()=>{
         num.style.backgroundColor = "#fb7413"
-        span.innerHTML = num.innerHTML
+        span.textContent = num.textContent
     })
 })
 
